@@ -1,11 +1,12 @@
-
-#include "Zombie.hpp"
-#include <iostream>
 #include <string>
+#include <iostream>
+#include "zombie.hpp"
 
-Zombie::Zombie(std::string name) { _name = name; }
+Zombie::Zombie()	{}
 
 Zombie::~Zombie()	{}
+
+void	Zombie::setName(std::string name) { _name = name; }
 
 void	Zombie::announce() const
 {
